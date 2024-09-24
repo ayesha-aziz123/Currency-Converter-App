@@ -1,16 +1,18 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
-
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #a8a88f;
-  
+  background-color: hsl(313, 170%, 31%);
+}
+.container h2 {
+  text-align: center;
+  font-size: 1.7rem;
 }
 
 .container {
@@ -19,7 +21,7 @@ body {
   border-radius: 1rem;
   min-height: 50vh;
   width: 50vh;
-  box-shadow: 10px 10px 20px 0 rgb(93, 86, 86);
+  box-shadow: 10px 10px 20px 0 rgb(31, 28, 28);
 }
 
 form {
@@ -34,7 +36,7 @@ input {
   border-radius: 0.75rem;
 }
 form input {
-  border: 1px solid lightgrey;
+  border: 1.5px solid lightgrey;
   font-size: 1rem;
   height: 3rem;
   padding-left: 0.5rem;
@@ -45,10 +47,9 @@ form input {
   align-items: center;
   margin-top: 2rem;
 }
-.dropdown i{
-    font-size: 1.4rem;
-    margin-top: 1rem;
-
+.dropdown i {
+  font-size: 1.4rem;
+  margin-top: 1rem;
 }
 .select-container img {
   font-size: 1.75rem;
@@ -64,20 +65,21 @@ form input {
   border: 1px solid lightgrey;
   width: 6rem;
 }
-.select-container select{
-    font-size: 1rem;
-    width: auto;
+.select-container select {
+  font-size: 1rem;
+  width: auto;
 }
-.msg{
-    margin: 2rem 0 2rem 0;
+.msg {
+  margin: 2rem 0 2rem 0;
 }
-form button{
- height: 3rem;
- background-color: rgb(165, 16, 165);
- color: white;
- font-size: 1.15rem;
- cursor: pointer;
+form button {
+  height: 3rem;
+  background-color: hsl(327, 72%, 29%);
+  color: white;
+  font-size: 1.15rem;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
-button:hover{
-    opacity: 0.7;
+button:hover {
+  opacity: 0.7;
 }

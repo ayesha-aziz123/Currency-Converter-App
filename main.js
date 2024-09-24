@@ -181,6 +181,7 @@ for (let select of dropdownSele) {
       options.selected = "selected";
     }
   }
+
   select.addEventListener("change", (evt) => {
     updateFlag(evt.target);
   });
@@ -204,12 +205,11 @@ const updateExchangeRate = async () => {
     amount.value = "1";
   }
 
+
   const URL = `${Base_URL}/${fromCurrency.value.toLowerCase()}.json`;
   let response = await fetch(URL);
   let data = await response.json();
-  let rate = await data[fromCurrency.value.toLowerCase()][
-    toCurrency.value.toLowerCase()
-  ];
+  let rate = await data[fromCurrency.value.toLowerCase()][toCurrency.value.toLowerCase()];
   // console.log(rate);
 
   let finalAmount = amtVal * rate;
@@ -217,15 +217,16 @@ const updateExchangeRate = async () => {
 };
 
 
-
-
 window.addEventListener("load", () => {
-  updateExchangeRate()
+  updateExchangeRate();
 });
 
-
-
-btn.addEventListener("click",  (evt) => {
+btn.addEventListener("click", (evt) => {
   evt.preventDefault();
-  updateExchangeRate()
+  updateExchangeRate();
 });
+
+
+
+
+
